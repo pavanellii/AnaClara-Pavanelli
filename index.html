@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Até a última rosa 🌹</title>
+
+    <meta name="description" content="Uma pequena surpresa para alguém muito especial.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PARTÍCULAS -->
+    <div id="particles"></div>
+
+    <!-- MÚSICA -->
+    <audio id="music" loop>
+        <!--
+        COLOQUE SUA MÚSICA AQUI.
+
+        Exemplo:
+        <source src="musica.mp3" type="audio/mpeg">
+
+        Depois coloque o arquivo musica.mp3
+        na mesma pasta do index.html
+        -->
+    </audio>
+
+    <!-- BOTÃO DE MÚSICA -->
+    <button id="musicButton" class="music-button" onclick="toggleMusic()">
+        ♪
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- TELA INICIAL -->
+    <!-- ============================= -->
+
+    <section id="hero" class="screen active">
+
+        <div class="hero-content">
+
+            <div class="small-text">
+                Para alguém muito especial...
+            </div>
+
+            <div class="rose-container">
+                <div class="glow"></div>
+
+                <div class="rose">
+                    🌹
+                </div>
+            </div>
+
+            <h1>
+                Eu te fiz<br>
+                uma promessa.
+            </h1>
+
+            <p class="subtitle">
+                E existe uma coisa que você precisa descobrir.
+            </p>
+
+            <button class="main-button" onclick="nextScreen('promise')">
+                Descobrir
+                <span>♡</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- PROMESSA -->
+    <!-- ============================= -->
+
+    <section id="promise" class="screen">
+
+        <div class="content">
+
+            <div class="number">
+                01
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="intro">
+                Talvez seja apenas uma frase...
+            </p>
+
+            <h2>
+                "Eu vou te amar<br>
+                até que a última<br>
+                rosa morra."
+            </h2>
+
+            <div class="rose-line">
+                🌹
+            </div>
+
+            <p class="text">
+                Mas eu queria que você entendesse
+                que essa frase não foi escolhida por acaso.
+            </p>
+
+            <button class="main-button" onclick="nextScreen('secret')">
+                Tem mais uma coisa...
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- A ROSA FALSA -->
+    <!-- ============================= -->
+
+    <section id="secret" class="screen">
+
+        <div class="content">
+
+            <div class="number">
+                02
+            </div>
+
+            <div class="rose-big">
+                🌹
+            </div>
+
+            <h2>
+                Você reparou?
+            </h2>
+
+            <p class="text large">
+                Entre todas essas rosas,
+                existe uma que nunca vai morrer.
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="text">
+                Essa rosa é falsa.
+            </p>
+
+            <p class="text highlight">
+                E não foi por acaso.
+            </p>
+
+            <button class="main-button" onclick="nextScreen('letter')">
+                Leia minha carta
+                <span>♡</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- CARTA -->
+    <!-- ============================= -->
+
+    <section id="letter" class="screen">
+
+        <div class="letter-container">
+
+            <div class="number">
+                03
+            </div>
+
+            <div class="letter">
+
+                <div class="letter-decoration">
+                    🌹
+                </div>
+
+                <h2>
+                    Ana Clara,
+                </h2>
+
+                <p>
+                    Eu não sei exatamente onde essa história vai chegar,
+                    mas sei de uma coisa:
+                    <strong>eu gosto de você de um jeito que não consigo explicar direito.</strong>
+                </p>
+
+                <p>
+                    E eu não quero te prometer um relacionamento perfeito,
+                    porque sei que pessoas perfeitas não existem.
+                </p>
+
+                <p>
+                    Quero te prometer algo muito mais importante:
+                    que, se um dia você decidir ficar comigo,
+                    eu vou fazer o possível para que você nunca se arrependa dessa escolha.
+                </p>
+
+                <p>
+                    Eu não quero ser alguém que vai te machucar.
+                    Quero ser alguém que vai cuidar de você,
+                    respeitar seus sentimentos,
+                    ouvir você e estar do seu lado.
+                </p>
+
+                <p>
+                    Quero continuar te mimando,
+                    continuar tentando arrancar aquele sorriso lindo de você
+                    e transformar seus dias ruins em dias um pouquinho melhores.
+                </p>
+
+                <p>
+                    Se você decidir ficar comigo,
+                    talvez eu não consiga te dar o mundo inteiro...
+                </p>
+
+                <p class="highlight">
+                    Mas vou passar todos os dias tentando fazer
+                    você se sentir a menina mais feliz desse mundo.
+                </p>
+
+                <p>
+                    E, sinceramente?
+                </p>
+
+                <p class="highlight big">
+                    Se você escolher ficar comigo,
+                    eu vou ser o cara mais feliz desse mundo.
+                </p>
+
+                <p>
+                    Então guarda essa rosa.
+                </p>
+
+                <p>
+                    Porque enquanto todas as outras um dia vão morrer...
+                </p>
+
+                <p class="highlight">
+                    essa aqui não.
+                </p>
+
+                <div class="signature">
+                    Com carinho,<br>
+                    <span>Eu ❤️</span>
+                </div>
+
+            </div>
+
+            <button class="main-button" onclick="nextScreen('choice')">
+                Tem uma última coisa...
+                <span>♡</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- ESCOLHA -->
+    <!-- ============================= -->
+
+    <section id="choice" class="screen">
+
+        <div class="content">
+
+            <div class="number">
+                04
+            </div>
+
+            <h2>
+                Agora eu quero<br>
+                deixar uma coisa<br>
+                nas suas mãos.
+            </h2>
+
+            <p class="text">
+                Eu não quero que você escolha por pressão.
+                Quero que, se algum dia você escolher ficar comigo,
+                seja porque seu coração quis.
+            </p>
+
+            <div class="buttons">
+
+                <button class="choice-button yes" onclick="finalYes()">
+                    ❤️ Quero ficar
+                </button>
+
+                <button class="choice-button no" onclick="finalNo()">
+                    🌹 Ainda não
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- FINAL SIM -->
+    <!-- ============================= -->
+
+    <section id="finalYes" class="screen final-screen">
+
+        <div id="roses"></div>
+
+        <div class="final-content">
+
+            <div class="final-rose">
+                🌹
+            </div>
+
+            <h1>
+                Então vem cá...
+            </h1>
+
+            <p>
+                Porque eu ainda tenho
+                muita coisa para viver
+                ao seu lado.
+            </p>
+
+            <div class="heart">
+                ❤️
+            </div>
+
+            <span class="forever">
+                Até a última rosa morrer.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- FINAL NÃO -->
+    <!-- ============================= -->
+
+    <section id="finalNo" class="screen final-screen">
+
+        <div class="final-content">
+
+            <div class="final-rose">
+                🌹
+            </div>
+
+            <h1>
+                Tudo bem.
+            </h1>
+
+            <p>
+                Eu não quero que você escolha
+                por pressão.
+            </p>
+
+            <p>
+                Quero que, se algum dia você
+                escolher ficar comigo,
+                seja porque seu coração quis.
+            </p>
+
+            <div class="heart">
+                ❤️
+            </div>
+
+            <span class="forever">
+                Eu só quero ver você sorrir.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
